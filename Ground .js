@@ -6,7 +6,6 @@ class Ground {
       this.body = Bodies.rectangle(x,y,width,height,options);
       this.width = width;
       this.height = height;
-      this.image = loadImage("sprite/base.png");
       World.add(world, this.body);
     }
     display(){
@@ -15,8 +14,6 @@ class Ground {
       rectMode(CENTER);
       fill("brown");
       rect(pos.x, pos.y, this.width, this.height);
-      imageMode(CENTER);
-      image(this.image, 0, 0, this.width, this.height);
       pop()
     }
   };
